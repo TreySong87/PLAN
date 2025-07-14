@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGP Archive PLAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Calm Harmony (Warm Neutrals with Muted Blue Accent) -->
+    <!-- Application Structure Plan: A single-page layout with smooth-scrolling navigation to three main sections: WHY, HOW, and WHEN. The 'WHY' section now presents legacy sport examples (NBA, UFC) and specific poker applications sequentially, allowing for more vertical content with a new overarching 'Legacy Sports 사례' title. The 'HOW' section uses a two-column layout with a simple HTML-based diagram. This structure was chosen to present the strategic plan in a logical, digestible, and engaging format, prioritizing vertical flow and accommodating image and video content. -->
+    <!-- Visualization & Content Choices: Report Info: Use cases for archiving (NBA/UFC vs. Poker) -> Goal: Inform & Organize -> Viz: Sequential sections with cards and an overarching title for legacy sports, including resized images for NBA and UFC. Live Streaming section now includes embedded videos directly under the 'Narrative Boost' item with updated text and corrected playback URLs. -> Interaction: Video playback (click controls) -> Justification: Allows for more detailed content per section and accommodates future additions like media without horizontal constraints, while providing a clear grouping for legacy examples and interactive video content for poker. -> Library/Method: HTML/Tailwind. | Report Info: Archiving Methodology -> Goal: Inform & Explain -> Viz: Two-column layout with HTML/CSS diagram -> Interaction: None (static info) -> Justification: Makes abstract concepts (tagging) concrete and easy to grasp -> Library/Method: HTML/Tailwind. | Report Info: Timeline -> Goal: Inform -> Viz: Call-out card -> Interaction: None -> Justification: Clear, final statement. -> Library/Method: HTML/Tailwind. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+        }
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        .nav-active {
+            color: #2563eb;
+            font-weight: 600;
+        }
+        .tag-item {
+            border-left: 2px solid #9ca3af;
+            padding-left: 12px;
+            margin-left: 12px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800">
+
+    <header id="header" class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-stone-200">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-slate-900">GGP Archive PLAN</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#why" data-nav-link="why" class="nav-link text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">WHY</a>
+                        <a href="#how" data-nav-link="how" class="nav-link text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">HOW</a>
+                        <a href="#when" data-nav-link="when" class="nav-link text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">WHEN</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+        <section id="why" class="mb-20 scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">1. For What (WHY)</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+                    <span class="font-bold text-blue-600">본 아카이브의 목적과 활용 방안</span>을 정의합니다. 다른 스포츠 분야의 성공적인 레거시 사례를 참고하여 포커 콘텐츠에 적용할 수 있는 구체적인 활용법을 제시함으로써, 아카이브가 단순한 자료 보관을 넘어 어떻게 가치를 창출할 수 있는지 보여줍니다.
+                </p>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">Legacy Sports 사례</h3>
+                    <div class="space-y-6">
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="text-lg font-semibold mb-3 text-slate-800">🏀 NBA</h4>
+                            <ul class="space-y-2 text-slate-700 list-disc list-inside mb-4">
+                                <li><span class="font-semibold">인물 하이라이트:</span> Stephen Curry 모음집</li>
+                                <li><span class="font-semibold">대회 하이라이트:</span> 2019 NBA Final Top Play</li>
+                                <li><span class="font-semibold">B-roll or 인물:</span> TOP 10 NBA Celebrity Reaction</li>
+                                <li><span class="font-semibold">다큐멘터리:</span> Chasing History: 2024 NBA Playoffs</li>
+                            </ul>
+                            <div class="flex justify-center mt-4">
+                                <img src="https://github.com/TreySong87/PLAN/blob/main/NBA.png?raw=true" alt="NBA 경기 자료화면" class="max-w-full h-auto rounded-lg shadow-md w-full max-w-xl">
+                            </div>
+                        </div>
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="text-lg font-semibold mb-3 text-slate-800">🥊 UFC</h4>
+                            <ul class="space-y-2 text-slate-700 list-disc list-inside mb-4">
+                                <li><span class="font-semibold">경기 하이라이트:</span> KO, Submission 모음</li>
+                                <li><span class="font-semibold">선수 프로모션/하이라이트:</span> 다가오는 이벤트 참가 선수, 아이코닉 선수 하이라이트</li>
+                                <li><span class="font-semibold">이벤트 모음:</span> Event, 명경기 Compilation</li>
+                                <li><span class="font-semibold">다큐멘터리:</span> 임베디드 다큐 (인물 + 대회 + B-roll)</li>
+                                <li><span class="font-semibold">기타 콘텐츠:</span> 옥타곤 인터뷰, 기자회견</li>
+                            </ul>
+                            <div class="flex justify-center mt-4">
+                                <img src="https://github.com/TreySong87/PLAN/blob/main/ufc.png?raw=true" alt="UFC 경기 자료화면" class="max-w-full h-auto rounded-lg shadow-md w-full max-w-xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">In Poker - 포커대회, 포커컨텐츠에 맞게 활용</h3>
+                    <div class="space-y-6">
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="text-lg font-semibold mb-3 text-slate-800">📡 Live Streaming(포커대회 방송)</h4>
+                            <ul class="space-y-2 text-slate-700 list-disc list-inside">
+                                <li>
+                                    <span class="font-bold text-blue-600">내러티브 부스트:</span> 특정 인물들/핸드상황/대회를 강조해주는 자료 화면으로 활용
+                                </li>
+                            </ul>
+                            <div class="space-y-4 mt-4">
+                                <div class="flex justify-center">
+                                    <div class="w-full max-w-xl aspect-video">
+                                        <iframe class="w-full h-full rounded-lg shadow-md" src="https://drive.google.com/file/d/1fPuZ7su5sBS8_dJD4ILL8rXCfZlScwLS/preview" allow="fullscreen; autoplay; encrypted-media"></iframe>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center">
+                                     <div class="w-full max-w-xl aspect-video">
+                                        <iframe class="w-full h-full rounded-lg shadow-md" src="https://drive.google.com/file/d/1wNBP1TPJgt0h8BVIrM-vTJ1GzsaURMCx/preview" allow="fullscreen; autoplay; encrypted-media"></iframe>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center">
+                                     <div class="w-full max-w-xl aspect-video">
+                                        <iframe class="w-full h-full rounded-lg shadow-md" src="https://drive.google.com/file/d/1XVfu6CC1MfPpfQ3AfUzxexsMOyPXOg_C/preview" allow="fullscreen; autoplay; encrypted-media"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="space-y-2 text-slate-700 list-disc list-inside mt-4">
+                                <li><span class="font-semibold">B-Roll 활용:</span> 대회 장소, 배경, 사물 영상 (오프닝, 인트로)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="text-lg font-semibold mb-3 text-slate-800">📱 Youtube/SNS</h4>
+                            <ul class="space-y-2 text-slate-700 list-disc list-inside">
+                                <li><span class="font-semibold">이슈 대응 (렉카 의도):</span> 이슈 인물/상황 하이라이트, 논란 선수 관련 영상</li>
+                            </ul>
+                            <div class="flex justify-center mt-4">
+                                <img src="https://github.com/TreySong87/PLAN/blob/main/image%20(7).png?raw=true" alt="이슈 대응 자료화면" class="max-w-full h-auto rounded-lg shadow-md w-full max-w-xl">
+                            </div>
+                            <ul class="space-y-2 text-slate-700 list-disc list-inside mt-4">
+                                <li><span class="font-semibold">브랜드 마케팅:</span> WSOP 브랜드 홍보 영상 / 레거시 영상 등</li>
+                                <li><span class="font-semibold">플레이 하이라이트:</span> Bad Beat, Bluff, EPIC HAND 등 포커플레이 핸드 Compilation</li>
+                            </ul>
+                            <div class="flex justify-center mt-4">
+                                <img src="https://github.com/TreySong87/PLAN/blob/main/image%20(8).png?raw=true" alt="유튜브/SNS 자료화면" class="max-w-full h-auto rounded-lg shadow-md w-full max-w-xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="mb-20 scroll-mt-20">
+             <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">2. HOW?</h2>
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+                    <span class="font-bold text-blue-600">효율적인 아카이브 구축 및 활용</span>을 위한 구체적인 방법론입니다. 포커 콘텐츠의 특성을 고려하여, 사용자가 방대한 정보 속에서 원하는 자료를 쉽고 빠르게 찾을 수 있도록 지원하는 두 가지 핵심 원칙을 제안합니다.
+                </p>
+            </div>
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">🎯 원하는 콘텐츠의 명확한 분류</h3>
+                    <p class="text-slate-600 mb-6">
+                        일반 스포츠와 달리 포커는 핸드 정보, 플레이어 액션 등 과다한 정보를 포함하므로, 기획자/작업자가 직관적으로 원하는 것을 찾을 수 있어야 합니다. 이를 위해 <span class="font-bold text-blue-600">메타데이터 태깅을 매우 정밀하게 분류 진행해야 합니다.</span>
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-8 mt-6">
+                        <!-- NBA Metadata Example -->
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                            <h4 class="text-lg font-semibold mb-3 text-center text-slate-800">예시: NBA 메타데이터 태그</h4>
+                            <div class="space-y-3 text-slate-700 text-sm">
+                                <div>
+                                    <p class="font-semibold">경기 정보</p>
+                                    <ul class="list-disc list-inside pl-2">
+                                        <li>시즌 (2024-2025)</li>
+                                        <li>경기 날짜</li>
+                                        <li>팀명 (ex. LAL vs BOS)</li>
+                                        <li>리그 구분 (정규시즌 / 플레이오프 / 프리시즌 등)</li>
+                                        <li>쿼터, 다운, 드라이브, 클러치 타임 등</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">선수 정보</p>
+                                    <ul class="list-disc list-inside pl-2">
+                                        <li>선수명 (풀네임 + 약어)</li>
+                                        <li>선수 번호</li>
+                                        <li>포지션 (QB, WR, PF 등)</li>
+                                        <li>팀 소속</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">주요 액션 태그</p>
+                                    <ul class="list-disc list-inside pl-2">
+                                        <li>덩크, 쓰리포인트, 태클, 터치다운, 인터셉션, 블로킹 등</li>
+                                        <li>하이라이트 / 슬로우 / 인터뷰 / 벤치 리액션</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">상황 설명</p>
+                                    <ul class="list-disc list-inside pl-2">
+                                        <li>게임 클로징 / 역전 / 대기록 / 데뷔 / 은퇴 경기</li>
+                                        <li>파울 / 비디오 판독 / 논란 상황</li>
+                                    </ul>
+                                </div>
+                                 <div>
+                                    <p class="font-semibold">감정 기반 태그</p>
+                                    <ul class="list-disc list-inside pl-2">
+                                        <li>감동 / 분노 / 흥분 / 실망 / 리벤지</li>
+                                        <li>팬 리액션 / 코치 리액션</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Poker Metadata Example -->
+                        <div class="bg-stone-50 p-4 rounded-lg border border-stone-200">
+                             <h4 class="text-lg font-semibold mb-3 text-center text-slate-800">포커 메타데이터 태그</h4>
+                             <div class="space-y-4 text-slate-700">
+                                <div>
+                                    <p class="font-semibold">영상정보</p>
+                                    <ul class="list-disc list-inside pl-2 text-sm">
+                                        <li>영상 설명</li>
+                                        <li>대회 및 프로젝트 제목</li>
+                                        <li>년도</li>
+                                        <li>장소(개최장소/대회장/호텔)</li>
+                                        <li>사물,풍경,배경 등(B-Roll)</li>
+                                        <li>소스(PGM,Clean/Youtube Straming/ESPN Episode 등)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">포커플레이정보</p>
+                                    <ul class="list-disc list-inside pl-2 text-sm">
+                                        <li>플레이어</li>
+                                        <li>핸드등급</li>
+                                        <li>에픽핸드정보(쿼즈,로얄플러쉬 등)</li>
+                                        <li>포커플레이태그(블러프,배드빗,쿨러,등)</li>
+                                        <li>토너먼트상황(우승,브레이슬릿,버블 등)</li>
+                                        <li>감정기반태그</li>
+                                        <li>상황설명</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">주요핸드스토리태그(핸드의 자세한 분류)</p>
+                                    <ul class="list-disc list-inside pl-2 text-sm">
+                                        <li>배드빗(다양한 배드빗 분류)</li>
+                                        <li>블러프(블러프 분류)</li>
+                                        <li>석아웃</li>
+                                        <li>쿨러</li>
+                                        <li>올인</li>
+                                        <li>포스트플랍런아웃</li>
+                                    </ul>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200">
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">🙌 기획자/작업자의 편의성 증대</h3>
+                    <p class="text-slate-600">
+                        아카이브 시스템은 데이터를 저장하는 아카이버가 아닌, <span class="font-bold text-blue-600">콘텐츠를 직접 사용하는 기획자와 영상 편집자의 작업 효율을 극대화</span>하는 방향으로 설계되어야 합니다. 사용자의 워크플로우를 분석하여 검색, 미리보기, 다운로드 등 모든 과정이 편리하도록 솔루션을 구축하는 것이 목표입니다. 이 부분은 <span class="font-bold text-blue-600">구체적인 협의를 통해 맞춤형으로 설계</span>할 예정입니다.
+                    </p>
+                    <div class="mt-6">
+                        <a href="https://treysong87.github.io/iconik2/" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md">
+                            아카이빙 솔루션 ICONIK 현황 바로가기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="when" class="scroll-mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">3. WHEN?</h2>
+                 <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+                    프로젝트의 실행 시기와 일정은 여러 변수에 따라 결정됩니다. 아래 요소를 종합적으로 고려하여 가장 효율적인 계획을 수립하기 위해 추후 심도 있는 논의가 필요합니다.
+                </p>
+            </div>
+            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-6 rounded-r-lg shadow-sm">
+                <h3 class="text-xl font-bold mb-2">추후 협의 필요</h3>
+                <p>
+                    프로젝트 실행 시기는 도입할 <span class="font-semibold">솔루션의 종류</span>, 관리할 데이터의 <span class="font-semibold">총 용량</span>, 그리고 프로젝트에 투입될 <span class="font-semibold">구성 인원</span>에 따라 크게 달라질 수 있습니다. 각 요소별 세부 사항을 확정한 후 구체적인 일정을 수립할 예정입니다.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('main section');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.toggle('nav-active', link.getAttribute('data-nav-link') === id);
+                        });
+                    }
+                });
+            }, { rootMargin: '-50% 0px -50% 0px' });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
